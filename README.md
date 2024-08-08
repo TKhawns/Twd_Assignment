@@ -1,4 +1,6 @@
 # Frontend Assignment
+## Deploy demo:
+https://twd-assignment.vercel.app/
 ## Introduction
 This Repository using ReactJS framework to implement a table with 10 user details at a time, up to 100 users.
 
