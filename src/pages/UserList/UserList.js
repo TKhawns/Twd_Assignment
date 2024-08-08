@@ -15,6 +15,8 @@ function UserList() {
 
   const handleUserList = async () => {
     document.title = "Users list";
+
+    // get user data from api
     setIsLoad(true);
     let data = await getAllUsers();
     console.log(data);
@@ -22,17 +24,14 @@ function UserList() {
       return;
     }
     setList(data.data);
-    console.log(data.data);
-    console.log(list);
-    setTimeout(() => {
-      setIsLoad(false);
-    }, 1000);
+    setIsLoad(false);
   };
 
   useEffect(() => {
     handleUserList();
   }, []);
 
+  // user data at one page include sorting
   const currentTableData = useMemo(() => {
     if (list.results === null) return [];
     if (isLoad) return [];
