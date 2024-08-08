@@ -3,6 +3,7 @@ import Header from "../../share_components/Header/Header";
 import "./UserList.scss"
 import Pagination from "../../share_components/Pagtination/Pagtination";
 import { getAllUsers } from "../../services/appServices";
+import Loading from "../../share_components/Loading/Loading";
 
 let PageSize = 10;
 
@@ -20,7 +21,6 @@ function UserList() {
             if (data === null) {
                 return;
             }
-
             setList(data.data);
             console.log(data.data)
             console.log(list)
@@ -61,6 +61,11 @@ function UserList() {
     return (
         <div>
             <Header/>
+            {isLoad && (
+                <div className="loading-animation">
+                    <Loading />
+                </div>
+            )}
             <div className="yourmodel-container">
                 <div className="yourmodel-content">
                     <div className="yourmodel-title">List of Users</div>
