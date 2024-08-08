@@ -41,13 +41,18 @@ function NavBar() {
                         </a>
                     </li>
                     <li onClick={handleHiddenNav} className="nav-item">
-                        <a className="link yourmodel" href="/your-model">
-                           Danh sach nguoi dung
+                        <a className="link yourmodel" href="/">
+                           List of users
                         </a>
                     </li>
                     <li onClick={handleHiddenNav} className="nav-item">
-                        <a className="link" href="/request">
-                            Lien he
+                        <a className="link" target="blank" href="https://github.com/TKhawns/Twd_Assignment.git">
+                            Documentation
+                        </a>
+                    </li>
+                    <li onClick={handleHiddenNav} className="nav-item">
+                        <a className="link" href="/contact">
+                            Contact
                         </a>
                     </li>
                    

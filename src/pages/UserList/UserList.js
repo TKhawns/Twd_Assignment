@@ -66,11 +66,11 @@ function UserList() {
                     <Loading />
                 </div>
             )}
-            <div className="yourmodel-container">
-                <div className="yourmodel-content">
-                    <div className="yourmodel-title">List of Users</div>
+            <div className="user-container">
+                <div className="user-content">
+                    <div className="user-title">List of Users</div>
                     {list.Data !== null ? (
-                        <div className="yourmodel-table">
+                        <div className="user-table">
                             <div className="section">
                                 <div className="filter">
                                     <div className="filter-form">

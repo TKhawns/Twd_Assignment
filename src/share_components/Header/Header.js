@@ -27,7 +27,6 @@ function Header() {
                             <select
                                 className="change-lang"
                             >
-                             
                                 <option value="en" >
                                     Tiếng Anh
                                 </option>
@@ -63,18 +62,18 @@ function Header() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="link yourmodel" href="/your-model">
+                                        <a className="link yourmodel" href="/">
                                            Users
                                         </a>
                                     </li>
                                     
                                     <li className="nav-item">
-                                        <a className="link" href="/request">
+                                        <a className="link" target='blank' href="https://github.com/TKhawns/Twd_Assignment">
                                           Documentation
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="link" href="/request">
+                                        <a className="link" href="/contact">
                                           Contact
                                         </a>
                                     </li>
